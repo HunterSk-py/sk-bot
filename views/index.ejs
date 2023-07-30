@@ -1,0 +1,37 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container py-4">
+    <div class="card">
+      <div class="card-header text-white heading-chat">
+        <h2 class="mb-0">Sk's Assistant</h2>
+      </div>
+      <div class="card-body chat-body" id="chat-body">
+        <!-- Chat messages will be dynamically added here -->
+      </div>
+      <div class="card-footer chat-input">
+        <div class="input-group">
+          <input type="text" class="form-control" id="user-input" placeholder="Type your message...">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" onclick="sendMessage()">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
